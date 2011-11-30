@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>RailwayFlower</title>
+</head>
+<body>
+  <ul>
+    <% RailwayFlower.manifests.each do |manifest| -%>
+      <li><%= link_to manifest , run_path(:manifest => manifest) %></li>
+    <% end -%>
+  </ul>
+</body>
+</html>
